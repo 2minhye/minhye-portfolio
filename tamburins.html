@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+<title>템버린즈</title>
+
+<link rel="stylesheet" href="./css/sub1.css">  
+<link rel="stylesheet" href="./css/tb.css">
+
+
+</head>
+<body>
+	
+
+
+
+	<a href="#" class="close" onclick="window.close();"><img src="./images/tamburins/close_btn.png" alt="닫기버튼"></a>
+
+	<section class="header">
+		<h1>TAMBURINS</h1>
+		<h2>Web Design</h2>
+	</section>
+
+    <section id="visual">
+        <img src="images/tamburins/tb_mockup.jpg" alt="마뗑킴 웹사이트 목업디자인">
+    </section>
+
+    <section id="contents">
+        <div class="inner">
+            
+            <h3 >TAMBURINS
+                <span>Web Design</span>
+            </h3>
+
+            <p> 향수&핸드크림 브랜드인 '탬버린즈'의 웹사이트 리디자인 작품입니다.<br>
+                배경 색상은 로즈톤이 가미된 부드러운 핑크를 선택하여 고급스러움을 유지하였고,<br> 
+                보조 색상은 브랜드의 기존 컬러인 화이트를 이용하여 핑크와 조화를 이루도록 하였습니다.<br> 
+            
+            <table>
+                
+                <tr>
+                    <td>Type</td>
+                    <td>Web Design</td>
+                </tr>
+
+                <tr>
+                    <td>Color</td>
+                    <td> 
+                            <div class="d1"></div>
+                            <div class="d2"></div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Font</td>
+                    <td class="font">Garamond-Normal, Futura-Bold</td>
+                </tr>
+                
+                <tr>
+                    <td>Tools</td>
+                    <td>Figma</td>
+
+                </tr>
+            </table>
+
+
+        </div>
+
+    </section>
+
+    <section id="detail">
+            <div class="inner">
+				
+                <ul class="title">
+                    <h3>Main</h3>
+                </ul>
+
+                <div class="mu">
+                    <img src="images/tamburins/tb_main.jpg" alt="탬버린즈 웹사이트 디자인">
+                </div>
+
+                <ul class="title">
+                    <h3>Sub</h3>
+                </ul>
+
+                <div class="mu">
+                    <img src="images/tamburins/tb_sub.jpg" alt="탬버린즈 웹사이트 디자인">
+                </div>
+
+             </div>
+    </section>
+
+    <div class="top_btn">
+    <a href="#">
+        <img src="./images/tamburins/top_btn.png" alt="최상단 이동">
+    </a>
+    </div>
+
+
+    <script>
+        document.querySelector('.top_btn a').addEventListener('click', e => {
+        e.preventDefault();
+        document.querySelectorAll('*').forEach(el => el.scrollTo?.({ top: 0, behavior: 'smooth' }));
+        });
+    </script>
+</body>
+    
+</html>

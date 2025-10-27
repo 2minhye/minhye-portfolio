@@ -1,0 +1,858 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Minhyeverse – Portfolio</title>
+  <!-- playball font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css">
+
+  <!-- Phosphor Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/phosphor-icons@1.4.2/src/css/icons.min.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- jQuery/scrolla -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/scrolla.jquery.min.js"></script>
+  <!--  Swiper를 먼저 로드 -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/script.js" defer></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/SplitText.min.js" defer></script>
+
+</head>
+
+<body>
+  <!-- 검정 페이드 오버레이 (배경 전환용) -->
+  <div class="page-fader" aria-hidden="true"></div>
+  <!-- <div class="page-fader"></div> -->
+
+  <!-- 헤더 -->
+  <header class="site-header">
+    <div class="header-container">
+      <a class="brand" href="#">
+        <img src="./images/minhyeverse.svg" alt="Minhyeverse" />
+      </a>
+      <nav class="nav">
+        <!-- <a href="#home">Home</a> -->
+        <a href="#about">About</a>
+        <a href="#process">Process</a>
+        <a href="#works">Works</a>
+        <a href="#contact">✦Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section>
+    <!-- 메인 -->
+    <main id="home" class="hero">
+      <!-- 배경 -->
+      <div class="bg"></div>
+      <!-- 가운데 프레임 이미지(텍스트 포함된 main.svg) -->
+      <figure class="window">
+        <img src="./images/main.png" alt="">
+      </figure>
+
+      <!-- 오른쪽 데스크탑 아이콘 -->
+      <aside class="dock">
+        <a class="dock-item" href="#about">
+          <img src="./images/about.svg" alt="About" />
+          <span>About</span>
+        </a>
+        <a class="dock-item" href="#process">
+          <img src="./images/process.svg" alt="Process" />
+          <span>Process</span>
+        </a>
+        <a class="dock-item" href="#works">
+          <img src="./images/work.svg" alt="Works" />
+          <span>Works</span>
+        </a>
+      </aside>
+  </section>
+
+  <!-- 마우스 드래그 관련 요소들 -->
+  <div class="design-target"></div>
+  <div class="draw-box"></div>
+  <div class="image-wrap">
+    <!-- <img src="images/PORTFOLIO-SITE.png" alt="Portfolio" class="main-img" /> -->
+    <!-- <img src="images/cursor.svg" alt="Cursor" class="cursor-icon" /> -->
+    <img src="images/m.gif" class="cursor" alt="마우스커서" />
+  </div>
+  </main>
+
+  <!-- marquee -->
+  <div class="marquee" aria-label="Welcome marquee">
+    <div class="marquee-track">
+      <div class="marquee-group">
+        <span class="badge">2025</span>
+        <span class="marquee-text"><span class="highlight">Welcome To Minhye’s</span> Portfolio</span>
+
+        <span class="badge">2025</span>
+        <span class="marquee-text"><span class="highlight">Welcome To Minhye’s</span> Portfolio</span>
+
+        <span class="badge">2025</span>
+        <span class="marquee-text"><span class="highlight">Welcome To Minhye’s</span> Portfolio</span>
+      </div>
+
+      <div class="marquee-group" aria-hidden="true">
+        <span class="badge">2025</span>
+        <span class="marquee-text"><span class="highlight">Welcome To Minhye’s</span> Portfolio</span>
+
+        <span class="badge">2025</span>
+        <span class="marquee-text"><span class="highlight">Welcome To Minhye’s</span> Portfolio</span>
+
+        <span class="badge">2025</span>
+        <span class="marquee-text"><span class="highlight">Welcome To Minhye’s</span> Portfolio</span>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- 필요 시 아래 섹션들 추가 -->
+  <!-- <section id="about" class="section stub"><h2>About</h2></section> -->
+  <section id="about" class="about">
+    <div class="about-title animate" data-animate="motion">
+      <span>DESIGNING
+        <span class="avatar" aria-label="Minhye avatar">
+          <img src="./images/lmh.svg" alt="">
+          <img src="./images/glasses.svg" class="glasses" alt="" aria-hidden="true">
+        </span>
+      </span>
+      <span>EXPERIENCE WITH CARE</span>
+    </div>
+
+    <div class="about-gallery my-slider swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="./images/about-1.png" alt=""></div>
+        <div class="swiper-slide"><img src="./images/about-2.png" alt=""></div>
+        <div class="swiper-slide"><img src="./images/about-3.png" alt=""></div>
+        <div class="swiper-slide"><img src="./images/about-4.png" alt=""></div>
+        <div class="swiper-slide"><img src="./images/about-5.png" alt=""></div>
+        <div class="swiper-slide"><img src="./images/about-6.png" alt=""></div>
+        <div class="swiper-slide"><img src="./images/about-7.png" alt=""></div>
+        <div class="swiper-slide"><img src="./images/about-8.png" alt=""></div>
+        <div class="swiper-slide"><img src="./images/about-9.png" alt=""></div>
+        <div class="swiper-slide"><img src="./images/about-10.png" alt=""></div>
+        <div class="swiper-slide"><img src="./images/about-11.png" alt=""></div>
+        <div class="swiper-slide"><img src="./images/about-12.png" alt=""></div>
+
+      </div>
+    </div>
+
+    <p class="who animate" data-animate="motion">Who Am I?</p>
+  </section>
+
+  <section id="resume" class="resume">
+    <div class="resume-left">
+      <h3 class="power">Design</h3>
+      <h3 class="power">Detail</h3>
+      <h3 class="power">Inspire</h3>
+      <h3 class="power">Story</h3>
+
+      <p class="desc">
+        기획부터 디자인, 퍼블리싱을 이해하며,<br>
+        사용자가 편하게 느낄 수 있는 웹 환경을 만들어가는 것이 저의 목표입니다.
+      </p>
+    </div>
+
+    <div class="resume-right">
+      <div class="hello">
+        <span>Hello, I'm</span>
+        <!-- 손글씨 SVG: 스크롤 진입 시 그려짐 -->
+        <!-- (생략) -->
+        <span class="sign">lee min hye</span>
+      </div>
+
+      <div class="info-grid">
+        <!-- PROFILE -->
+        <div class="col">
+          <h4 class="sec-title">PROFILE</h4>
+          <dl class="rows">
+            <div>
+              <dt>Name</dt>
+              <dd>이민혜</dd>
+            </div>
+            <div>
+              <dt>Birth</dt>
+              <dd>1996.09.15</dd>
+            </div>
+            <div>
+              <dt>Phone</dt>
+              <dd>010-5219-1887</dd>
+            </div>
+            <div>
+              <dt>Mail</dt>
+              <dd>2minems@naver.com</dd>
+            </div>
+            <div>
+              <dt>Address</dt>
+              <dd>서울특별시 중랑구</dd>
+            </div>
+          </dl>
+        </div>
+
+        <!-- LICENSE -->
+        <div class="col">
+          <h4 class="sec-title">LICENSE</h4>
+          <dl class="rows">
+            <div>
+              <dt>2025</dt>
+              <dd>2025.03 GTQ 일러스트 1급</dd>
+            </div>
+            <div>
+              <dt>2022</dt>
+              <dd>2021.06 GTQ 포토샵 1급</dd>
+            </div>
+            <div>
+              <dt>2016</dt>
+              <dd>운전면허 2종 보통</dd>
+            </div>
+          </dl>
+        </div>
+
+        <!-- EDUCATION -->
+        <div class="col col-2">
+          <h4 class="sec-title">EDUCATION</h4>
+          <dl class="rows">
+            <div>
+              <dt>2025</dt>
+              <dd>EZEN DX센터 UI/UX디자인 & 프론트엔드 교육과정 이수</dd>
+            </div>
+            <div>
+              <dt>2024</dt>
+              <dd>EZEN 종로센터 웹 디자인 교육과정 이수</dd>
+            </div>
+            <div>
+              <dt>2022</dt>
+              <dd>(주) 딜리버스 셀러매니저</dd>
+            </div>
+            <div>
+              <dt>2021</dt>
+              <dd>(주) 브랜드 B2C파트</dd>
+            </div>
+            <div>
+              <dt>2019</dt>
+              <dd>폴리텍대학 패션디자인과 졸업</dd>
+            </div>
+          </dl>
+        </div>
+
+        <!-- SKILL (선택) -->
+        <div class="col skill-inline">
+          <h4 class="sec-title">SKILL</h4>
+          <img src="./images/skill.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="journey-black-overlay"></div>
+
+  <!-- Journey Intro Section -->
+  <section class="journey-section ">
+    <!-- 왼쪽 구름 -->
+    <img src="images/bg_cloud1.png" alt="Cloud Left" class="cloud cloud-left">
+    <!-- 오른쪽 구름 -->
+    <img src="images/bg_cloud2.png" alt="Cloud Right" class="cloud cloud-right">
+
+    <!-- 중앙 텍스트 -->
+    <div class="journey-text">
+      <p>
+        사용자에게 자연스럽게 다가가는 경험을 만들기 위해<br>
+        익숙한 흐름과 세심한 디테일, 감정이 머무는 인터페이스를 설계합니다.<br>
+        작지만 중요한 순간들을 고민하며 사람과 서비스를 연결하는 디자인을 추구합니다.
+      </p>
+
+      <p>
+        지금부터 보여드릴 여정은<br>
+        고민과 경험들이 쌓여 만들어진 저의 디자인 기록입니다.
+      </p>
+      <a href="#timeline" class="see-timeline">
+        See Timeline <i class="ph ph-arrow-down"></i>
+      </a>
+    </div>
+  </section>
+
+
+
+  <!-- ▼▼▼ 타임라인: 축 1개 + 각 연도 헤더에 점만 유지 ▼▼▼ -->
+  <section id="timeline" class="timeline">
+    <div class="tl-track">
+      <i class="tl-axis" aria-hidden="true"></i>
+
+      <!-- 2016 -->
+      <article class="tl-year" data-text="2016">
+        <h3 class="tl-year-label">2016<span class="plus">+</span></h3>
+        <span class="tl-dot" aria-hidden="true"></span>
+
+
+        <div class="tl-text">
+          <p class="company">유니폼 제조사</p>
+          <p class="desc">유니폼 디자인 전문 회사에서 디자인팀으로 근무하며 작업지시서 작성, 공장 발주, 의류 픽업 등 제작 프로세스를 담당했습니다.<br> 원단 발주와 시장조사를 통해 디자인
+            방향을 제시하고, 제작 과정 전반에 참여하며 디자인부터 생산까지의 흐름을 이해했습니다. 이 경험을 통해 소재 선정, 제작 관리, 협업 능력을 향상시켰습니다.</p>
+        </div>
+
+
+        <figure class="tl-media">
+          <img src="./images/2016.png" alt="2016">
+        </figure>
+      </article>
+
+      <!-- 2017 -->
+      <article class="tl-year" data-text="2017">
+        <h3 class="tl-year-label">2017<span class="plus">+</span></h3>
+        <span class="tl-dot" aria-hidden="true"></span>
+
+        <figure class="tl-media">
+          <img src="./images/2017_3.png" alt="2017">
+        </figure>
+
+        <div class="tl-text">
+          <p class="company">패션디자인 졸업</p>
+          <p class="desc">패션디자인과에서 의류 제작 전 과정을 배우며 패턴 설계, 봉제, 스타일링 등 다양한 디자인 기법을 익혔습니다.<br>졸업 작품은 컨셉 기획부터 디자인, 원단 선정, 샘플
+            제작, 촬영까지 직접 수행하며 창의성과 완성도를 갖춘 컬렉션을 완성했습니다. 이를 통해 트렌드 분석, 소재 이해, 협업 능력을 키웠습니다.</p>
+        </div>
+      </article>
+
+      <!-- 2020 -->
+      <article class="tl-year" data-text="2020">
+        <h3 class="tl-year-label">2020<span class="plus">+</span></h3>
+        <span class="tl-dot" aria-hidden="true"></span>
+
+        <figure class="tl-media">
+          <img src="./images/2020_1.png" alt="2020">
+        </figure>
+
+        <div class="tl-text">
+          <p class="company">패션 커머스 플랫폼</p>
+          <p class="desc">B2C 부서에서 회사 스프레드 시트로 데이터를 마감하고 KPI 지표에 반영하는 업무를 맡았습니다.
+            업무 효율을 위해 CS팀, 물류팀과 슬랙으로 실시간 소통하며 문제를 신속히 해결했고, 반품 매뉴얼을 직접 제작하여 신입 계약직 교육을 진행했습니다</p>
+        </div>
+      </article>
+
+      <!-- 2022 -->
+      <article class="tl-year" data-text="2022">
+        <h3 class="tl-year-label">2022<span class="plus">+</span></h3>
+        <span class="tl-dot" aria-hidden="true"></span>
+
+        <figure class="tl-media">
+          <img src="./images/2022_1.png" alt="2022">
+        </figure>
+
+        <div class="tl-text">
+          <p class="company">이커머스 운영대행</p>
+          <p class="desc">대형 해외 셀러의 판매 현황, 재고, 주문 처리 과정을 실시간으로 점검하여 안정적인 운영을 유지했습니다. 상품 등록 시 이미지, 설명, 가격 등의 정확성을 검수하고,
+            재고 변동 사항을 관리하여 판매 오류를 최소화했습니다. 슬랙(Slack)과 메신저로 셀러 문의를 신속하게 처리하고, 문제 발생 시 관련 부서와 협력하여 해결을 지원했습니다.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- WORKS -->
+  <section id="works" class="works">
+    <div class="works-inner"> <!-- ★ 추가: 공통 기준 컨테이너 -->
+
+      <div class="works-head">
+        <h2 class="title animate" data-animate="motion">WORKS</h2>
+        <p class="subtitle animate" data-animate="motion">
+          UI/UX 프로세스를 토대로 사용자 경험을 설계하고 디자인하는
+          앱·웹 중심의 리뉴얼 및 프로젝트들입니다.
+        </p>
+      </div>
+
+      <div class="work-grid">
+        <!-- 1) 큰 카드 -->
+        <article class="work-card animate" data-animate="motion" data-size="lg">
+          <a class="thumb-link" href="https://tinyurl.com/2vd7and5" target="_blank" rel="noopener"
+            aria-label="서울시립 미술관 반응형 웹 프로젝트 보기">
+
+            <figure class="thumb">
+              <img src="./images/work1.png" alt="">
+            </figure>
+          </a>
+          <div class="info">
+            <p class="w-title animate" data-animate="motion">Mobile UI/UX</p>
+            <p class="w-desc animate" data-animate="motion">캐치테이블 애플리케이션 리뉴얼형 프로젝트</p>
+          </div>
+        </article>
+
+        <!-- 2) 작은 카드 — 서울시립 미술관 -->
+        <article class="work-card">
+          <a class="work-card" href="https://tinyurl.com/5dwtc2xb" target="_blank" rel="noopener"
+            aria-label="서울시립 미술관 반응형 웹 프로젝트 보기">
+            <figure class="thumb">
+              <img src="./images/work2.png" alt="">
+            </figure>
+          </a>
+
+          <div class="info">
+            <p class="w-title">Web Redesign</p>
+            <p class="w-desc">서울시립 미술관 반응형 웹 프로젝트</p>
+
+            <ul class="tags" data-launch="sema">
+              <li><a href="https://sema-project.vercel.app/" data-size="pc">PC</a></li>
+              <li><a href="https://sema-project.vercel.app/" data-size="tablet">Tablet</a></li>
+              <li><a href="https://sema-project.vercel.app/" data-size="mobile">Mobile</a></li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- 3) 작은 카드 -->
+        <article class="work-card">
+          <a class="work-card" href="https://tinyurl.com/mrsp5fz3" target="_blank" rel="noopener"
+            aria-label="팬덤 커뮤니티 앱 프로젝트 보기">
+            <figure class="thumb">
+              <img src="./images/work3.png" alt="">
+            </figure>
+          </a>
+
+          <div class="info">
+            <p class="w-title">Mobile UI/UX</p>
+            <p class="w-desc">팬덤 커뮤니티 앱 프로젝트</p>
+
+            <ul class="tags" data-url="https://bside-steel.vercel.app/">
+              <!-- <li><a href="https://bside-steel.vercel.app/" data-size="tablet">Tablet</a></li> -->
+              <li><a href="https://bside-steel.vercel.app/" data-size="mobile">Mobile</a></li>
+            </ul>
+          </div>
+        </article>
+      </div>
+
+    </div>
+  </section>
+
+
+<!-- ===== Visual Design (CSS 애니메이션 슬라이더 / JS 불필요) ===== -->
+<section id="visual-design" class="vdesign is-in">
+  <div class="works-inner">
+    <div class="v-head">
+      <h3 class="title">VISUAL DESIGN</h3>
+      <p class="subtitle">
+        웹사이트 리디자인과 포스터 작업을 통해, UI 기반 디자인을 넘어서 시각적 창작과 브랜딩 감각을 탐구했습니다.
+      </p>
+    </div>
+
+    <div class="v-viewport">
+      <div class="v-track">
+        <div class="v-row">
+
+          <!-- ── 원본 세트 ── -->
+          <figure class="v-card">
+            <img src="./images/Design_1.png" alt="">
+            <figcaption class="v-copy">
+              <span class="v-kicker">웹 사이트 리디자인</span>
+              <strong class="v-name">Matin Kim</strong>
+              <p class="v-desc">브랜드 색과 아이덴티티를 살린 리디자인</p>
+            </figcaption>
+            <a class="card-link" href="./matinkim.html" target="_blank" rel="noopener"></a>
+          </figure>
+
+          <figure class="v-card">
+            <img src="./images/Design_2.png" alt="">
+            <figcaption class="v-copy">
+              <span class="v-kicker">웹 사이트 리디자인</span>
+              <strong class="v-name">Sulwhasoo</strong>
+              <p class="v-desc">브랜드 색과 아이덴티티를 살린 리디자인</p>
+            </figcaption>
+            <a class="card-link" href="./sulwhasoo.html" target="_blank" rel="noopener"></a>
+          </figure>
+
+          <figure class="v-card">
+            <img src="./images/Design_3.png" alt="">
+            <figcaption class="v-copy">
+              <span class="v-kicker">웹 사이트 리디자인</span>
+              <strong class="v-name">Tamburins</strong>
+              <p class="v-desc">브랜드 색과 아이덴티티를 살린 리디자인</p>
+            </figcaption>
+            <a class="card-link" href="./tamburins.html" target="_blank" rel="noopener"></a>
+          </figure>
+
+          <figure class="v-card">
+            <img src="./images/Design_4.png" alt="">
+            <figcaption class="v-copy">
+              <span class="v-kicker">포스터 디자인</span>
+              <strong class="v-name">Typography</strong>
+              <p class="v-desc">타이포와 이미지의 상호작용 포스터</p>
+            </figcaption>
+            <a class="card-link" href="./typography.html" target="_blank" rel="noopener"></a>
+          </figure>
+
+          <!-- ── 복제 1세트 ── -->
+          <figure class="v-card">
+            <img src="./images/Design_1.png" alt="">
+            <figcaption class="v-copy">
+              <span class="v-kicker">웹 사이트 리디자인</span>
+              <strong class="v-name">Matin Kim</strong>
+              <p class="v-desc">브랜드 색과 아이덴티티를 살린 리디자인</p>
+            </figcaption>
+            <a class="card-link" href="./matinkim.html" target="_blank" rel="noopener"></a>
+          </figure>
+
+          <figure class="v-card">
+            <img src="./images/Design_2.png" alt="">
+            <figcaption class="v-copy">
+              <span class="v-kicker">웹 사이트 리디자인</span>
+              <strong class="v-name">Sulwhasoo</strong>
+              <p class="v-desc">브랜드 색과 아이덴티티를 살린 리디자인</p>
+            </figcaption>
+            <a class="card-link" href="./sulwhasoo.html" target="_blank" rel="noopener"></a>
+          </figure>
+
+          <figure class="v-card">
+            <img src="./images/Design_3.png" alt="">
+            <figcaption class="v-copy">
+              <span class="v-kicker">웹 사이트 리디자인</span>
+              <strong class="v-name">Tamburins</strong>
+              <p class="v-desc">브랜드 색과 아이덴티티를 살린 리디자인</p>
+            </figcaption>
+            <a class="card-link" href="./tamburins.html" target="_blank" rel="noopener"></a>
+          </figure>
+
+          <figure class="v-card">
+            <img src="./images/Design_4.png" alt="">
+            <figcaption class="v-copy">
+              <span class="v-kicker">포스터 디자인</span>
+              <strong class="v-name">Typography</strong>
+              <p class="v-desc">타이포와 이미지의 상호작용 포스터</p>
+            </figcaption>
+            <a class="card-link" href="./typography.html" target="_blank" rel="noopener"></a>
+          </figure>
+
+          <!-- ── 복제 2세트 ── -->
+          <figure class="v-card">
+            <img src="./images/Design_1.png" alt="">
+            <figcaption class="v-copy">
+              <span class="v-kicker">웹 사이트 리디자인</span>
+              <strong class="v-name">Matin Kim</strong>
+              <p class="v-desc">브랜드 색과 아이덴티티를 살린 리디자인</p>
+            </figcaption>
+            <a class="card-link" href="./matinkim.html" target="_blank" rel="noopener"></a>
+          </figure>
+
+          <figure class="v-card">
+            <img src="./images/Design_2.png" alt="">
+            <figcaption class="v-copy">
+              <span class="v-kicker">웹 사이트 리디자인</span>
+              <strong class="v-name">Sulwhasoo</strong>
+              <p class="v-desc">브랜드 색과 아이덴티티를 살린 리디자인</p>
+            </figcaption>
+            <a class="card-link" href="./sulwhasoo.html" target="_blank" rel="noopener"></a>
+          </figure>
+
+          <figure class="v-card">
+            <img src="./images/Design_3.png" alt="">
+            <figcaption class="v-copy">
+              <span class="v-kicker">웹 사이트 리디자인</span>
+              <strong class="v-name">Tamburins</strong>
+              <p class="v-desc">브랜드 색과 아이덴티티를 살린 리디자인</p>
+            </figcaption>
+            <a class="card-link" href="./tamburins.html" target="_blank" rel="noopener"></a>
+          </figure>
+
+          <figure class="v-card">
+            <img src="./images/Design_4.png" alt="">
+            <figcaption class="v-copy">
+              <span class="v-kicker">포스터 디자인</span>
+              <strong class="v-name">Typography</strong>
+              <p class="v-desc">타이포와 이미지의 상호작용 포스터</p>
+            </figcaption>
+            <a class="card-link" href="./typography.html" target="_blank" rel="noopener"></a>
+          </figure>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+  <!-- Follow CTA: read more (hover on works thumbnails) -->
+  <div class="follow-cta" aria-hidden="true">
+    <img class="cta-center" src="./images/readMore1.png" alt="">
+    <img class="cta-ring" src="./images/readMore2.png" alt="">
+  </div>
+
+  <section class="clone" id="clone">
+    <h2 class="clone-title">
+      <span class="line line-top">
+        <span class="text">CLONE CODING</span>
+        <img class="glyph" src="./images/glyph.svg" alt="">
+      </span>
+      <span class="line line-bottom">CODE TO MASTER.</span>
+    </h2>
+
+    <ul class="clone-list">
+      <!-- 각 항목의 data-img는 미리보기 PNG 경로 (파일명 = 사이트명). -->
+      <li>
+        <a class="clone-item" href="https://openpalette.vercel.app" target="_blank"
+          rel="noopener noreferrer" data-img="images/OPEN PALETTE.png">
+          <div class="ticker" aria-hidden="true">
+            <div class="track">
+              <span>OPEN PALETTE</span><span class="dot">•</span>
+              <span>OPEN PALETTE</span><span class="dot">•</span>
+              <span>OPEN PALETTE</span><span class="dot">•</span>
+              <span>OPEN PALETTE</span><span class="dot">•</span>
+            </div>
+          </div>
+          <span class="label">OPEN PALETTE</span>
+          <img class="arrow" src="images/arrow.svg" alt="">
+        </a>
+      </li>
+
+      <li>
+        <a class="clone-item" href="https://ystudio-nu.vercel.app/" target="_blank" data-img="images/YSTUDIO.png">
+          <div class="ticker" aria-hidden="true">
+            <div class="track">
+              <span>Y STUDIO</span><span class="dot">•</span>
+              <span>Y STUDIO</span><span class="dot">•</span>
+              <span>Y STUDIO</span><span class="dot">•</span>
+              <span>Y STUDIO</span><span class="dot">•</span>
+            </div>
+          </div>
+          <span class="label">Y STUDIO</span>
+          <img class="arrow" src="images/arrow.svg" alt="">
+        </a>
+      </li>
+
+      <li>
+        <a class="clone-item" href="https://daehye-two.vercel.app/" target="_blank" data-img="images/DAEHYE.png">
+          <div class="ticker" aria-hidden="true">
+            <div class="track">
+              <span>DAEHYE</span><span class="dot">•</span>
+              <span>DAEHYE</span><span class="dot">•</span>
+              <span>DAEHYE</span><span class="dot">•</span>
+              <span>DAEHYE</span><span class="dot">•</span>
+            </div>
+          </div>
+          <span class="label">DAEHYE</span>
+          <img class="arrow" src="images/arrow.svg" alt="">
+        </a>
+      </li>
+
+      <li>
+        <a class="clone-item" href="https://muzain-delta.vercel.app/" target="_blank" data-img="images/MUZINE.png">
+          <div class="ticker" aria-hidden="true">
+            <div class="track">
+              <span>MUZINE</span><span class="dot">•</span>
+              <span>MUZINE</span><span class="dot">•</span>
+              <span>MUZINE</span><span class="dot">•</span>
+              <span>MUZINE</span><span class="dot">•</span>
+            </div>
+          </div>
+          <span class="label">MUZINE</span>
+          <img class="arrow" src="images/arrow.svg" alt="">
+        </a>
+      </li>
+
+      <li>
+        <a class="clone-item" href="https://daebang-drab.vercel.app/" target="_blank" data-img="images/DAEBANG.png">
+          <div class="ticker" aria-hidden="true">
+            <div class="track">
+              <span>DAEBANG</span><span class="dot">•</span>
+              <span>DAEBANG</span><span class="dot">•</span>
+              <span>DAEBANG</span><span class="dot">•</span>
+              <span>DAEBANG</span><span class="dot">•</span>
+            </div>
+          </div>
+          <span class="label">DAEBANG</span>
+          <img class="arrow" src="images/arrow.svg" alt="">
+        </a>
+      </li>
+
+      <li>
+        <a class="clone-item" href="https://crew-beryl.vercel.app/" target="_blank" data-img="images/crewala.png">
+          <div class="ticker" aria-hidden="true">
+            <div class="track">
+              <span>CREW A LA MODE</span><span class="dot">•</span>
+              <span>CREW A LA MODE</span><span class="dot">•</span>
+              <span>CREW A LA MODE</span><span class="dot">•</span>
+              <span>CREW A LA MODE</span><span class="dot">•</span>
+            </div>
+          </div>
+          <span class="label">CREW A LA MODE</span>
+          <img class="arrow" src="images/arrow.svg" alt="">
+        </a>
+      </li>
+    </ul>
+
+    <!-- Hover 프리뷰 -->
+    <div id="cc-preview" aria-hidden="true">
+      <img alt="">
+    </div>
+  </section>
+
+
+
+  <section id="process" class="proc" aria-label="Portfolio Process">
+    <div class="proc-head">
+      <h2 class="proc-title">
+        <span class="proc-title-main">PORTFOLIO</span>
+        <span class="proc-title-accent">PROCESS</span>
+      </h2>
+      <p class="proc-sub">
+        저는 사용자를 위해 디자인하고, 더 좋은 경험을 위해 디테일을 다듬습니다.<br>
+        아래는 본 포트폴리오의 진행 과정입니다.
+      </p>
+    </div>
+
+    <div class="proc-canvas">
+      <!-- 곡선 경로 (원본 SVG) -->
+      <svg class="proc-path" viewBox="0 0 1168 2438" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <!-- 회색 트레일 (항상 표시) -->
+        <path id="procBase"
+          d="M518.739 2253.78C522.796 2252.88 527.999 2250.62 532.507 2248C568.673 2227 612.992 2122.84 544.499 2139.5C522.353 2144.89 490.078 2175.26 518.739 2253.78ZM518.739 2253.78C522.001 2262.72 527.56 2273.78 532.507 2284C580.907 2384 601.34 2428 605.507 2437.5M518.739 2253.78C-0.714355 2368.97 -31.7752 2036.4 17.5065 1853.5C73.9065 1592.7 522.34 1553.17 739.507 1566C894.999 1575.19 1056.17 1483.5 1116.01 1417C1224.01 1327 1135.01 1254.83 1077.01 1230C1003.01 1190 933.173 1194.33 907.507 1201.5C873.507 1233.5 947.34 1233.83 988.507 1230C1128.11 1226.8 1021.01 1155.67 950.007 1120.5C737.607 1023.7 485.84 984.5 386.507 977C214.499 953 184.812 882.239 177.999 835C154.492 672 349.666 593.5 460.999 583C639.399 595 697.173 404 705.007 307C740.207 195.4 815.673 156.833 849.007 151.5C941.407 131.5 961.84 172.5 960.507 195.5C910.507 289.5 811.007 234.667 767.506 195.5C731.506 171.9 735.173 56 741.506 1"
+          stroke="#22B7ED" stroke-width="2" fill="none" stroke-linecap="round" />
+
+        <!-- (기존) 파란 하이라이트 3개: 충돌 방지 위해 숨김만 -->
+        <path class="proc-legacy-hi" d="M665 280 C 665 150, 585 120, 555 380" stroke="#22B7ED" stroke-width="4"
+          fill="none" />
+        <path class="proc-legacy-hi" d="M270 1014 C 430 980, 600 980, 690 1200" stroke="#22B7ED" stroke-width="4"
+          fill="none" />
+        <path class="proc-legacy-hi" d="M780 1585 C 690 1700, 520 1720, 390 1765" stroke="#22B7ED" stroke-width="4"
+          fill="none" />
+
+        <!-- 파란 오버레이: 같은 경로를 ‘스크롤로 그려짐’ -->
+        <path id="procOverlay" stroke="#22B7ED" stroke-width="4" fill="none" stroke-linecap="round" />
+
+        <!-- 시작점 원 -->
+        <circle r="8" class="proc-dot" />
+      </svg>
+      
+      
+      <!-- 보조 타이틀 -->
+      <div class="proc-call proc-call--process">process.</div>
+      <!-- <div class="proc-call proc-call--contact">contact.</div> -->
+
+      <!-- 단계 번호 + tn-atom -->
+      <div class="proc-badge proc-badge--01">
+        <svg class="proc-atom" data-range="0.06,0.18" viewBox="0 0 20 20" aria-hidden="true">
+          <circle class="proc-atom-bg" cx="10" cy="10" r="10" />
+          <circle class="proc-atom-fg" cx="10" cy="10" r="8" />
+        </svg>
+        01.
+      </div>
+
+      <div class="proc-badge proc-badge--02">
+        <svg class="proc-atom" data-range="0.22,0.36" viewBox="0 0 20 20" aria-hidden="true">
+          <circle class="proc-atom-bg" cx="10" cy="10" r="8" />
+          <circle class="proc-atom-fg" cx="10" cy="10" r="8" />
+        </svg>
+        02.
+      </div>
+
+      <div class="proc-badge proc-badge--03">
+        <svg class="proc-atom" data-range="0.40,0.52" viewBox="0 0 20 20" aria-hidden="true">
+          <circle class="proc-atom-bg" cx="10" cy="10" r="8" />
+          <circle class="proc-atom-fg" cx="10" cy="10" r="8" />
+        </svg>
+        03.
+      </div>
+
+      <div class="proc-badge proc-badge--04">
+        <svg class="proc-atom" data-range="0.56,0.68" viewBox="0 0 20 20" aria-hidden="true">
+          <circle class="proc-atom-bg" cx="10" cy="10" r="8" />
+          <circle class="proc-atom-fg" cx="10" cy="10" r="8" />
+        </svg>
+        04.
+      </div>
+
+      <div class="proc-badge proc-badge--05">
+        <svg class="proc-atom" data-range="0.72,0.84" viewBox="0 0 20 20" aria-hidden="true">
+          <circle class="proc-atom-bg" cx="10" cy="10" r="8" />
+          <circle class="proc-atom-fg" cx="10" cy="10" r="8" />
+        </svg>
+        05.
+      </div>
+
+      <div class="proc-badge proc-badge--06">
+        <svg class="proc-atom" data-range="0.86,0.98" viewBox="0 0 20 20" aria-hidden="true">
+          <circle class="proc-atom-bg" cx="10" cy="10" r="8" />
+          <circle class="proc-atom-fg" cx="10" cy="10" r="8" />
+        </svg>
+        06.
+      </div>
+
+
+      <!-- 라벨들 -->
+      <div class="proc-label proc-label--idea">
+        <h4><span class="proc-dot">•</span>idea sketch</h4>
+        <p>메인 레이아웃과 페이지 흐름을 조사·분석하여<br>나만의 사이트를 기획합니다.</p>
+      </div>
+      <div class="proc-label proc-label--flow">
+        <h4><span class="proc-dot">•</span>flow chart</h4>
+        <p>전체 사용자 여정을 플로우 차트로 정리해<br>직관적으로 탐색 가능한 구조를 설계합니다.</p>
+      </div>
+      <div class="proc-label proc-label--ds">
+        <h4><span class="proc-dot">•</span>design system</h4>
+        <p>타이포·컬러·컴포넌트 가이드를 정의하고<br>일관된 인터페이스를 구축합니다.</p>
+      </div>
+      <div class="proc-label proc-label--character">
+        <h4><span class="proc-dot">•</span>character</h4>
+        <p>사이트의 톤앤매너에 맞춘 캐릭터 요소를 기획하여<br>동작·제스처를 스케치합니다.</p>
+      </div>
+      <div class="proc-label proc-label--affinity">
+        <h4><span class="proc-dot">•</span>affinity diagram</h4>
+        <p>리서치 인사이트를 묶어 우선순위를 도출하고<br>핵심 요구를 구조화합니다.</p>
+      </div>
+      <div class="proc-label proc-label--insight">
+        <h4><span class="proc-dot">•</span>insight</h4>
+        <p>테스트 결과와 피드백을 종합해 개선안을 정리하고<br>다음 스텝을 정의합니다.</p>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- CONTACT / FOOTER SECTION -->
+  <section class="foot" aria-labelledby="foot-title">
+    <div class="foot-wrap">
+      <!-- Left -->
+      <div class="foot-left">
+        <h2 id="foot-title" class="foot-title">Contact Me</h2>
+        <p class="foot-sub">THANK YOU FOR REVIEWING MY PORTFOLIO</p>
+
+        <div class="foot-contact" aria-label="contact information">
+          <h3 class="foot-contact-label">CONTACT</h3>
+          <p class="foot-contact-line">
+            T. <a href="tel:01052191887">010 5219 1887</a>
+          </p>
+          <p class="foot-contact-line">
+            E. <a href="mailto:2minems@naver.com">2minems@naver.com</a>
+          </p>
+        </div>
+      </div>
+
+      <!-- Right -->
+      <nav class="foot-nav" aria-label="footer navigation">
+        <ul>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#works">WORK</a></li>
+          <li><a href="#process">PROCESS</a></li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+
+
+  
+
+  
+
+</body>
+
+</html>

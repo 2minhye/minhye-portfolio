@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+<title>타이포그래피</title>
+
+
+<link rel="stylesheet" href="./css/sub1.css">
+<link rel="stylesheet" href="./css/tg.css">
+
+</head>
+<body>
+	
+
+
+
+	<a href="#" class="close" onclick="window.close();"><img src="./images/typography/close_btn.png" alt="닫기버튼"></a>
+
+	<section class="header">
+		<h1>TYPOGRAPHY</h1>
+		<h2>Poster design</h2>
+	</section>
+
+    <section id="visual">
+        <img src="images/typography/typo_mockup.jpg" alt="타이포그래피 목업">
+    </section>
+
+    <section id="contents">
+        <div class="inner">
+
+            <h3 >Typography
+                <span>Poster design</span>
+            </h3>
+
+            <p>타이포그래피를 활용하여 제작한 포스터 입니다.<br> 
+                배경은 꽃 이미지와 어울리는 베이지 톤으로 꾸몄고  
+                서체는 포인트를 주기위해 Bauhaus를 사용하였습니다. </p>
+
+            <table>
+                <tr>
+                    <td>Type</td>
+                    <td>Typography</td>
+                </tr>
+
+                <tr>
+                    <td>Color</td>
+                    <td> 
+                            <div class="d1"></div>
+                            <div class="d2"></div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Font</td>
+                    <td class="font">Bauhaus</td>
+                </tr>
+
+                <tr>
+                    <td>Tools</td>
+                    <td>Photoshop</td>
+                </tr>
+            </table>
+
+        </div>
+    
+    </section>
+
+    <section id="detail">
+            <div class="inner">
+				
+                <ul class="title">
+                    <h3>Mockup View</h3>
+                </ul>
+
+                <div class="mu">
+                    <img src="images/typography/typo_mockup1.jpg" alt="타이포그래피 목업">
+                </div>
+
+
+				<ul class="title">
+                    <h3>Detail View</h3>
+                </ul>
+				<div>
+                    <img src="images/typography/typo_mockup2.jpg" alt="타이포그래피 포스터">
+                </div>
+
+             </div>
+    </section>
+
+    <div class="top_btn"><a href="#"><img src="./images/typography/top_btn.png" alt="최상단 이동"></a></div>
+
+    <script>
+        document.querySelector('.top_btn a').addEventListener('click', e => {
+        e.preventDefault();
+        document.querySelectorAll('*').forEach(el => el.scrollTo?.({ top: 0, behavior: 'smooth' }));
+        });
+    </script>
+
+
+</body>
+</html>

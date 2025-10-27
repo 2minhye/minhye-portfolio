@@ -1,0 +1,42 @@
+table .d1 {
+    float:right; 
+    margin-left:10px; 
+    background-color: #ffffff; 
+    border: 1px solid rgba(0,0,0,0.5); 
+}
+table .d2 {float:right;  background-color: #ecd186; }
+
+#detail .mu img {width: 100%;  padding-bottom:250px;}
+
+/* detail *//* 목업 */
+#detail { background-color:white; }
+#detail .inner {
+    width: 1300px;
+    margin: 0 auto;
+    padding-top: 175px;
+    padding-bottom: 95px;
+    /* border: red 2px dashed; */
+}
+
+/* 디테일 */
+.title {
+    display: flex; justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+.title h3{
+    color: #333;
+    font-family: Roboto;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: center;
+}
+
+/* 이미지 가운데 배치 */
+#detail div {
+    text-align: center;
+}
+
+
+
